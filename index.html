@@ -1,214 +1,202 @@
 <!doctype html>
 <html lang="zh-Hant-TW">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">  	<link href="https://fonts.googleapis.com/css?family=Cinzel|Josefin+Slab|Nothing+You+Could+Do|Bitter&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Josefin+Slab|Nothing+You+Could+Do|Bitter&display=swap"
+          rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet" media="screen">
     <link href="css/main.css" rel="stylesheet" media="screen">
+
+    <script src="https://kit.fontawesome.com/6355c9ede8.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 
     <title>Ariel's Resume</title>
     <link rel="icon" href="img/icon.ico" type="image/x-icon">
 
-  </head>
-  <body>
+</head>
+<body>
 
-    <a href="testfile.pdf" class="btn btn-light" download >PDF</a>
-    <button type="button" class="btn btn-light" onclick="readJSON()" id="language">繁體中文</button>
+<button id="language" class="btn btn-light" onclick="readJSON()"></button>
 
-    <div class="container-fluid outside">
+<div class="container-fluid outside">
 
-      <!--資料-->
-      <div class="row">
+    <!--資料-->
+    <div class="row">
         <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 odd">
-          <div class="row">
-            <div class="col-lg-7 col-sm-12">
-                <div class="profilepic">
-                  <img src="img/IMG_3211.jpg"  class="stickerimg swing sticker" width="50%" height="50%">
-                  <div class="sign fadeinleft">
-                    <span style="font-size:38px;">Ariel Chien</span><br>
-                    <span style="font-size:14px;">Nothing Is Impossible to A Willing Heart</span>
-                  </div>
-                </div>
-                
-            </div>
-            <div class="col-lg-5 col-sm-12 pro2">
-                <p class="intro">
-                  <span class="name" id="myName">簡鈺庭</span><br>
-                  <span id="grade">中原大學資訊管理四年級</span><br>
-                  <span>Tel: 0903778431</span><br>
-                  <a class="icon" href="https://www.facebook.com/profile.php?id=100005352617514"><i class="fab fa-facebook-square mr-md-3 fa-2x icon"></i></a>
-                  <a class="icon" href="https://github.com/kagari0803"><i class="fab fa-github mr-md-3 fa-2x icon"></i></a>
-                  <a class="icon pin-ic" href="mailto:kagari0803@gmail.com"><i class="fas fa-envelope fa-2x icon"></i></a>
-                </p>
-            </div>
-          </div>
-        </div>
-      </div>
-                  
-      <!--學歷-->
-      <div class="row">
-        <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 even">
-          <div class="row">
-              <div class="col-sm-12 col-md-3">
-                <h2 class="caption">Education</h2>
-              </div>
-              <div class="col-sm-12 col-md-8">
-                <h3 id="highSchool">桃園市立桃園高級中等學校<h3>
-                <span class="time">2014~2017</span><hr>
-                <h3 id="university_1">中原大學－應用華語文學系<h3>
-                <span class="time">2017~2019</span><hr>
-                <h3 id="university_2">中原大學－資訊管理學系<h3>
-                <span class="time">2019~2021</span>
-              </div>
-            </div>
-          </div>
-      </div>
-
-      <!--經驗-->
-      <div class="row">
-          <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 odd">
             <div class="row">
-              <div class="col-sm-12 col-md-3">
-                <h2 class="caption">Experience</h2>
-              </div>
-              <div class="col-sm-12 col-md-8">
-                <h5 id="experience_title_1">台灣微軟股份有限公司 (Microsoft) | 行政助理實習生</h5>
-                <p>2020/6~2021/3</p>
-                <p id="experience_content_1">
-                  使用Excel樞紐分析表、VLOOKUP等功能，對銷售資料進行數據分析<br>
-                  並自學VBA自動化工作流程，增進工作效率<br>
-                  支援公司各項活動、研討會</p>
-                <h5 id="experience_title_2">教育部數位學伴計畫 | 教學老師</h5>
-                <p>2018/10~2020/12</p>
-                <p id="experience_content_2">透過線上學習平台，以視訊的方式輔導、陪伴偏鄉小朋友<br>
-                  從備課、製作教材到課後輔導都是自己一手包辦<br>
-                  負責科目有數學、國文、英文，學生年齡國小至國中都有帶過<br>
-                  此計畫不只讓我學習如何和孩子溝通，更培養我的耐心與同理心</p>
-              </div>
-            </div>
-          </div>
-      </div>
+                <div class="col-lg-7 col-sm-12">
+                    <div class="profilepic">
+                        <img src="img/IMG_3211.jpg" class="stickerimg swing sticker" width="50%" height="50%">
+                        <div class="sign fadeinleft">
+                            <span style="font-size:38px;" id="englishName"></span><br>
+                            <span style="font-size:20px;" id="motto"></span>
+                        </div>
+                    </div>
 
-      <!--能力-->
-      <div class="row">
+                </div>
+                <div class="col-lg-5 col-sm-12 pro2">
+                    <p class="intro">
+                        <span class="name" id="myName"></span><br>
+                        <span id="status"></span><br>
+                        <span></span><br>
+                        <a class="icon" href="https://github.com/arielchienn"><i class="fa-brands fa-github fa-2x icon"></i></a>
+                        <a class="icon" href="mailto:kagari0803@gmail.com"><i class="fa-solid fa-envelope fa-2x icon"></i></a>
+                        <a class="icon" href="resume_en.pdf"><i class="fa-solid fa-file-pdf fa-2x icon"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--經驗-->
+    <div class="row">
         <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 even">
-          <div class="row">
-            <div class="col-sm-12 col-md-3">
-              <h2 class="caption">SKILLS</h2>
-            </div>
-            <div class="col-sm-12 col-md-8">
-              <h4 id="languageSkills">語文能力</h4><hr>
-              <h5 id="english">英文</h5>
-              <p id="languageSkills_english">聽：精通  說：中等  讀：精通  寫：中等<br>
-              <span>TOEIC (多益測驗) 905分</span></p>
-              <h5 id="taiwanese">台語</h5>
-              <p id="languageSkills_taiwanese">聽：中等  說：中等  讀：中等  寫：中等</p>
-              <h4 id="frontEnd">網頁前端</h4><hr>
-              <p id="frontEndSkills">熟悉 HTML5、 CSS3、Javascript、Bootstrap4<br>
-                略懂Vue.js<br>
-                可獨立切版、完成RWD網頁</p>
-              <h4 id="office">文書軟體</h4><hr>
-              <p id="officeSkills">熟悉Microsoft 365（Word、PowerPoint、Excel、Outlook、Teams、OneDrive
-                ）與OneNote、Power  BI<br>
-                可熟練使用Excel樞紐分析表、vlookup進行數據分析</p>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <h2 class="caption" id="experience"></h2>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <h4 id="experienceTitle"></h4>
+                    <p id="experiencePeriod"></p>
+                    <p id="experienceSummary"></p>
+                    <h5 id="experienceTitle1"></h5>
+                    <p id="experienceContent1"></p>
+                    <h5 id="experienceTitle2"></h5>
+                    <p id="experienceContent2"></p>
+                    <h5 id="experienceTitle3"></h5>
+                    <p id="experienceContent3"></p>
 
-      <!--自傳-->
-      <div class="row">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--學歷-->
+    <div class="row">
         <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 odd">
-          <div class="row">
-            <div class="col-sm-12 col-md-3">
-              <h2 class="caption">Autobiography</h2>
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <h2 class="caption" id="education"></h2>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <h3 id="professionalTraining"></h3>
+                    <span class="time" id="enrollmentPeriod3"></span>
+                    <hr>
+                    <h3 id="university"></h3>
+                    <span class="time" id="enrollmentPeriod2"></span>
+                    <hr>
+                    <h3 id="highSchool"></h3>
+                    <span class="time" id="enrollmentPeriod1"></span>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-8">
-              <p id="autobiography">
-              　　我原為應⽤華語⽂學系的學⽣，⼆年級選修資訊管理學系的課程後，對程式設計很感興趣，希望更深入學習，並將學到的技能實際應用、解決問題，故毅然決然轉系。雖然⼤三才成為資訊管理學系的⼀員，但我用短短兩年就修完系上課程，在學期間也透過Microsoft Professional Program進修，學習python與基礎資料科學。
-              <br><br>
-              　　我在程式撰寫⽅⾯資歷不深，但我對⾃⼰的學習能⼒有信⼼，可以很快學會新的知識，也有獨立的⾃學能⼒。 2020年六月時，用短短兩個禮拜的時間從零開始學Excel，最後順利通過面試，成為第17屆微軟行政助理實習生，錄取後也自學VBA，用巨集將工作流程自動化、增進工作效率。
-              <br><br>
-              　　在學期間我曾寫過前、後端網頁與Android app，對前端較感興趣，我喜歡做切版、畫面呈現。我了解前端是一個技術變化相當快速的領域，必須不停進修、學習，自己的能力也有不足之處，但我有良好的問題解決能力，懂得與團隊合作，且學習速度快，我相信自己能快速上手新知，並抱有持續學習的熱誠。希望能成為前端工程師並實際參與專案，加深經驗。
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <!--其他活動參與-->
-      <div class="row">
-        <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 even">
-          <div class="row">
-            <div class="col-sm-12 col-md-3">
-              <h2 class="caption">Additional</h2>
-            </div>
-            <div class="col-sm-12 col-md-8">
-              <div class="additional">
-                <img src="img/line_252659617800205.jpg" class="additional_pic" alt="MIC_camp">
-                <h5 id="micCamp_title">2020決策未來產業分析研習營 佳作</h5>
-                <p id="micCamp_content">
-
-                </p>
-              </div>
-              <div class="additional">
-                <img src="img/IMG_7726.jpg" class="additional_pic" alt="MS_codingAngles">
-                <h5 id="codingAngles_title">台灣微軟 2020 Coding Angels科技女力工作坊 公關&助教</h5>
-                <p id="codingAngles_content">
-                  
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    
-      <div class="row">
-        <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 odd">
-            <p style="text-align: center;">© 2021 Copyright:Chien Yu Ting<br>
-            ALL RIGHTS RESERVED</p>
-        </div>
-      </div>
-
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-    <script>
-      let count = 0;
+    <!--能力-->
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 even">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <h2 class="caption" id="skills">SKILLS</h2>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <h4 id="coding"></h4>
+                    <hr>
+                    <p id="codingSkills1"></p>
+                    <p id="codingSkills2"></p>
+                    <p id="officeSkills"></p>
+                    <h4 id="languageSkills"></h4>
+                    <hr>
+                    <h5 id="language1"></h5>
+                    <p id="languageSkills1"></p>
+                    <h5 id="language2"></h5>
+                    <p id="languageSkills2"></p>
+                    <h5 id="language3"></h5>
+                    <p id="languageSkills3"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      function readJSON() {
-        let xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            displayData(this)
-          }
-        };
-        xhttp.open("GET", "data.json", true);
-        xhttp.send();
-      }
+    <!--自傳-->
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 odd">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <h2 class="caption" id="autobiography"></h2>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <p id="autobiographyContent"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      function displayData(xhttp) {
-        let jsonData = JSON.parse(xhttp.responseText);
-        for (let key in jsonData) {
-          for (let i in jsonData[key]){
-            document.getElementById(i).innerHTML = jsonData[count][i].replace(/\n/g,"<br>");
-          }
-        }
-        if (count==0){
-          count++;
-        }else{
-          count=0;
-        }
+    <!--其他活動參與
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 even">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <h2 class="caption" id="others"></h2>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <div class="additional">
+                        <img src="img/line_252659617800205.jpg" class="additional_pic" alt="MIC_camp">
+                        <h5 id="othersTitle1"></h5>
+                        <p id="othersContent1"></p>
+                    </div>
+                    <div class="additional">
+                        <img src="img/IMG_7726.jpg" class="additional_pic" alt="MS_codingAngles">
+                        <h5 id="othersTitle2"></h5>
+                        <p id="othersContent2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      }
-      window.onload=function(){
-        readJSON();
-      }
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 odd">
+            <p style="text-align: center;" id="copyRight"></p>
+        </div>
+    </div>
+    -->
 
-      </script>
-  </body>
+</div>
+
+
+<!--
+  {
+    "language":"English",
+    "myName": "Ariel Chien",
+    "grade": "Senior Student Majoring in Information Management",
+    "highSchool": "Taoyuan Municipal Taoyuan Senior High school",
+    "university_1":"Chung Yuan Christian University Department of Teaching Chinese as a Second Language",
+    "university_2":"Chung Yuan Christian University Department of Information Management",
+    "experience_title_1":"Microsoft Taiwan | Office Administrative Intern",
+    "experience_content_1":"Using Excel pivot analysis table, VLOOKUP and other functions to analyze sales data\nSelf-learning VBA to automate workflow and improve efficiency\nSupporting company events and seminars",
+    "experience_title_2":"Digital Learning Partner Program (Ministry of Education) | Teacher",
+    "experience_content_2":"Guiding and accompanying children in remote areas, through the online learning platform\nFrom lesson preparation, textbook production to after-school tutoring, I do everything by myself\nI am responsible for Math, Mandarin, and English, and I have worked with students from elementary school to junior high school\nThis project has not only taught me how to communicate with children, but also developed my patience and empathy",
+    "languageSkills":"Language",
+    "english":"English",
+    "languageSkills_english":"Listening：Advanced / Speaking：Intermediate\nReading：Advanced / Writing：Advanced\nTOEIC Listening and Reading Test Score : 905",
+    "taiwanese":"Taiwanese",
+    "languageSkills_taiwanese":"Listening：Intermediate / Speaking：Intermediate\nReading：Intermediate / Writing：Intermediate",
+    "frontEnd":"Front End",
+    "frontEndSkills":"Familiar with HTML5, CSS3, Javascript、Bootstrap5\nKnow some Vue.js\nI can run with projects on my own but also enjoy working collaboratively",
+    "office":"Word Processing",
+    "officeSkills":"Familiar with Microsoft 365（Word, PowerPoint, Excel, Outlook, Teams, OneDrive）and OneNote, Power BI\nProficient in using Excel pivot tables and VLOOKUP for data analysis",
+    "autobiography":"　　我原為應⽤華語⽂學系的學⽣，⼆年級選修資訊管理學系的課程後，對程式設計很感興趣，希望更深入學習，並將學到的技能實際應用、解決問題，故毅然決然轉系。雖然⼤三才成為資訊管理學系的⼀員，但我用短短兩年就修完系上課程，在學期間也透過Microsoft Professional Program進修，學習python與基礎資料科學。\n\n　　我在程式撰寫⽅⾯資歷不深，但我對⾃⼰的學習能⼒有信⼼，可以很快學會新的知識，也有獨立的⾃學能⼒。 2020年六月時，用短短兩個禮拜的時間從零開始學Excel，最後順利通過面試，成為第17屆微軟行政助理實習生，錄取後也自學VBA，用巨集將工作流程自動化、增進工作效率。\n\n　　在學期間我曾寫過前、後端網頁與Android app，對前端較感興趣，我喜歡做切版、畫面呈現。我了解前端是一個技術變化相當快速的領域，必須不停進修、學習，自己的能力也有不足之處，但我有良好的問題解決能力，懂得與團隊合作，且學習速度快，我相信自己能快速上手新知，並抱有持續學習的熱誠。希望能成為前端工程師並實際參與專案，加深經驗。",
+    "micCamp_title":"2020決策未來產業分析研習營 佳作",
+    "micCamp_content":"2020寒假參與資策會所辦的產業分析營隊，和來自全台各大學、素昧平⽣的夥伴⼀起腦⼒激盪、解決難題\n我們原本不被看好，但因為結訓報告選題創新，且團隊向⼼⼒強、溝通良好，最後在20組優秀的團隊中脫穎⽽出，拿下佳作。",
+    "codingAngles_title":"台灣微軟 2020 Coding Angels科技女力工作坊 公關&助教",
+    "codingAngles_content":"在微軟實習期間我參與了Coding Angels專案，此為專為資訊相關背景的女性大專院校學生所設計的職涯分享會與工作坊。身為公關的我除了負責宣傳活動、擔任公司與參加者的溝通橋樑外，也在Hands-On工作坊擔任助教，協助參加者解決Azure服務的技術問題"
+  }
+]
+-->
+</body>
 </html>

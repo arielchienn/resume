@@ -88,15 +88,6 @@ p:hover{
   animation-iteration-count:1;
 }
 
-
-#downloadPdf{
-  position: fixed;
-  right: 20px;
-  bottom: 140px;
-  width: 90px;
-  height:90px;
-  border-radius: 50%;
-}
 #language{
     position: fixed;
     right: 20px;
